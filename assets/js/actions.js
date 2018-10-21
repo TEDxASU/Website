@@ -11,3 +11,15 @@ function growShrinkLogo() {
     Logo.style.width = '18%';
   }
 }
+
+$(document).ready(function(){
+  $('.slider').slider({
+    indicators: false,
+    height: 800
+  });
+});
+
+$(document).ready(function(){
+  $('.collapsible').collapsible();
+});
+      
