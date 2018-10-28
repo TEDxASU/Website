@@ -9,7 +9,35 @@
     margin-top: -5%;
 }
 
-.row{
+#fact-box-1 {
+    text-align: center;
+    background-color: #000000;
+    line-height: 50px;
+    color: white;
+}
+
+#fact-box-2 {
+    text-align: center;
+    background-color: #4E160D;
+    line-height: 50px;
+    color: white;
+}
+
+#fact-box-3 {
+    text-align: center;
+    background-color: #9C2C1A;
+    line-height: 50px;
+    color: white;
+}
+
+#fact-box-4 {
+    text-align: center;
+    background-color: #EB4327;
+    line-height: 50px;
+    color: white;
+}
+
+.row {
     display:block;
     width:100%;
     height:100%;
