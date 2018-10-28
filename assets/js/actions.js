@@ -27,7 +27,14 @@ function growShrinkLogo() {
 // Jumbotron function to move image caption near middle
 // without slider indicators for a autoplay of image browsing.
 $(document).ready(function(){
-  $('.slider').slider({
+  $('#aboutSlider').slider({
+    indicators: false,
+    height: 650
+  });
+});
+
+$(document).ready(function(){
+  $('#indexSlider').slider({
     indicators: false,
     height: 800
   });
