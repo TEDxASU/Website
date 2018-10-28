@@ -1,0 +1,57 @@
+/* CSS classes for navbar appearance */
+.navbar-default{background-color: black;}
+.navbar-default.top-of-page{background-color: transparent;}
+
+.tedx-nav {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    background-color:black;
+    /* height: 20px; */
+}
+
+#imgNavBarLogo {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    width:18%; 
+    padding-left: 5%;
+    padding-top: 2px;
+}
+
+#headerLogo {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    /* width: 100px; */
+    height: 150px;
+}
+
+.navItems {
+    margin-right: 5%;
+}
+
+
+nav {
+    height:7%;
+    /* line-height: 30px; */
+}
+
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+    height:7%;
+}
+
+/* nav .button-collapse i {
+    height:7%;
+} */
+
+nav .brand-logo { 
+    font-size: 1.6rem; 
+}
+
+/* @media only screen and (min-width: 601px) and (max-height:500px) {
+    nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+        height: 16%;
+        /* line-height: 30px; */
+    }
+} */
