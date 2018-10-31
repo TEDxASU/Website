@@ -1,8 +1,8 @@
 // TODO: Create respective function for lifecycle hook calls.
 
-window.onscroll = function() {
-  growShrinkLogo()
-};
+// window.onscroll = function() {
+//   growShrinkLogo()
+// };
 
 // Check for window resize, and rescale parallax.
 $(window).resize(function() {
@@ -11,18 +11,18 @@ $(window).resize(function() {
   $('.parallax').parallax();
 });
 
-function growShrinkLogo() {
-  // Grab navbar logo and shrink logo on scroll.
-  var Logo = document.getElementById("imgNavBarLogo")
-  var navbarBackground = document.getElementsByClassName('nav');
-  if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
-    Logo.style.width = '14%';
-    navbarBackground.style.height='12%';
-  } else {
-    Logo.style.width = '18%';
-    navbarBackground.style.height='16%';
-  }
-}
+// function growShrinkLogo() {
+//   // Grab navbar logo and shrink logo on scroll.
+//   var Logo = document.getElementById("imgNavBarLogo")
+//   var navbarBackground = document.getElementsByClassName('nav');
+//   if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+//     Logo.style.width = '14%';
+//     navbarBackground.style.height='12%';
+//   } else {
+//     Logo.style.width = '18%';
+//     navbarBackground.style.height='16%';
+//   }
+// }
 
 // Jumbotron function to move image caption near middle
 // without slider indicators for a autoplay of image browsing.
@@ -46,14 +46,15 @@ $(document).ready(function(){
   $('.parallax').parallax();
 });
 
-$(document).load(function(){
-  // $('.parallax-container').trigger('scroll');
-  // $('.parallax').trigger('scroll');
-});
+// $(document).load(function(){
+//   // $('.parallax-container').trigger('scroll');
+//   // $('.parallax').trigger('scroll');
+// });
 
 $(document).ready(function(){
   // hide .navbar first
-  $(".tedx-nav").hide();
+ //FIX: interferes with collapable
+  // $(".tedx-nav").hide();
   // fade in .navbar
   $(function () {
       $(window).scroll(function () {
@@ -76,4 +77,6 @@ $(document).ready(function(){
 $(document).ready(function(){
   $('.collapsible').collapsible();
 });
+
+$('.dropdown-trigger').dropdown();
       
