@@ -78,5 +78,12 @@ $(document).ready(function(){
   $('.collapsible').collapsible();
 });
 
-$('.dropdown-trigger').dropdown();
+$('.dropdown-trigger').dropdown({
+  
+});
+      
+// changes navbar to selection dropdown on right side on mobile
+$(document).ready(function(){
+  $('.sidenav').sidenav();
+});
       
