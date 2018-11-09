@@ -69,3 +69,25 @@
 ion-icon {
     font-size: 60px;
 }
+
+
+/* text input */
+
+ /* label color */
+ .input-field label {
+    color: black;
+  }
+  /* label focus color */
+  .input-field.inline input[type=text]:focus + label {
+    color: red;
+  }
+  /* label underline focus color */
+  .input-field.inline input[type=text]:focus {
+    border-bottom: 1px solid red;
+    box-shadow: 0 1px 0 0 red;
+  }
+  /* valid color */
+  .input-field.inline input[type=text].valid {
+    border-bottom: 1px solid red;
+    box-shadow: 0 1px 0 0 red;
+  }
