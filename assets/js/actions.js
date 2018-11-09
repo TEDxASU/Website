@@ -78,28 +78,9 @@ $(document).ready(function(){
   $('.collapsible').collapsible();
 });
 
-$('.dropdown-trigger').dropdown({
-  
-});
-      
+
 // changes navbar to selection dropdown on right side on mobile
 $(document).ready(function(){
   $('.sidenav').sidenav();
 });
-      
-// Form javascript/jquery START ------------------------------------------------------------
-var $form = $('form#test-form'),
-    url = 'https://script.google.com/macros/s/abcdefghijklmnopqrstuvwxyz1234567890/exec'
-
-$('#submit-form').on('click', function(e) {
-  e.preventDefault();
-  var jqxhr = $.ajax({
-    url: url,
-    method: "GET",
-    dataType: "json",
-    data: $form.serializeObject()
-  }).success(
-    // do something
-  );
-})
-// Form javascript/jquery END ------------------------------------------------------------
+    

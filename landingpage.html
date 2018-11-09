@@ -4,56 +4,67 @@
 <head>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Compiled and minified Materialize CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- jQuery import. -->
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
+
+    <!-- Compiled and minified Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <!-- Compiled and minified Materialize JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <!-- Custom stylesheet. -->
     <link rel="stylesheet" href="assets/css/landingPage.css">
-
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Custom JS -->
-    <script src="assets/js/actions.js"></script>
+    <!-- <script src="assets/js/actions.js"></script> -->
+    <script src="assets/js/landing.js"></script>
 </head>
 
-<body>
-    <div class="section black">
+<body class="section" style="background-color:black;">
+    <div class="section black row">
         <!-- Side text, logo. -->
-        <div class="row right-align caption-text">
+        <div class="right-align caption-text">
             <img id="logo-small" src="assets/img/TEDxASU logo vector.png" alt="">
             <h4 class="white-text right-align" style="margin-top:0px;">
                 <br>Coming <b>2019</b>
             </h4>
-            <span class="">
-                    <a class="waves-effect waves-light red btn-small">2018: Boundless</a>
-            </span>
-            <span class="">
-                    <a class="waves-effect waves-light red btn-small">2017: Innovation</a>
-            </span>
-            <span class="">
-                    <a class="waves-effect waves-light red btn-small">2016: Outliers</a>
-            </span>            
+
+            <!-- Dropdown Trigger -->
+            <a id="dropdown-group" class='dropdown-button waves-effect waves-light red btn' 
+                                    href='#' 
+                                    data-beloworigin="true" 
+                                    data-activates='dropdown-events'>
+                                    <span>Past Events</span></a>
+            <!-- Dropdown Structure -->
+            <ul id='dropdown-events' class='dropdown-content'>
+                <li>
+                    <a target="_blank" style="color:white;" class="waves-effect waves-light" href="https://www.youtube.com/playlist?list=PLsRNoUx8w3rMjnddlkIXeySLOHfqFxDLy">
+                        <b>2018: Boundless</b></a></li>
+                <li><a target="_blank" style="color:white;" class="waves-effect waves-light" href="https://www.youtube.com/playlist?list=PLsRNoUx8w3rOEkwS6gZashGbH8otAs3l4">
+                        <b>2017: Innovation</b></a></li>
+                <li><a target="_blank" style="color:white;" class="waves-effect waves-light" href="https://www.youtube.com/playlist?list=PLsRNoUx8w3rMUYd52BivT9yG8jmo1XA5K">
+                        <b>2016: Outliers</b></a></li>
+            </ul>
         </div>
+
         <!-- Looping gif build. -->
         <div class="row center-align">
             <img class="animation-logo" src="assets/gif/TEDconstruction_building_only.gif">
             <!-- Subtitle text. -->
             <h4 style="color:white; letter-spacing: 0.11em;">
-                Building <i>the next.</i>
+                <i>Building the next.</i>
             </h4>
         </div>
         <!-- Past events & Sign up buttons -->
-        <div class="row center-align">
-            <span class="input-field inline ">
+        <div class="row center-align signup" style="margin-bottom:-190px;">
+            <span class="input-field inline col s12">
                 <span class="input-field inline">
-                    <input id="email_inline" name="email" type="email" class="validate">
+                    <input id="email_inline" style="color:white;" name="email" type="email" class="validate">
                     <label for="email_inline">Email</label>
                 </span>
-                <button class="btn waves-effect waves-light red" type="submit" name="action" id="submit-form">Sign up
+                <button style="margin-left:25px;" class="btn waves-effect waves-light red" type="submit" name="action"
+                    id="submit-form">Newsletter
                     <i class="material-icons right">send</i>
                 </button>
             </span>
