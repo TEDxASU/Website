@@ -38,8 +38,7 @@
                                     <span>Past Events</span></a>
             <!-- Dropdown Structure -->
             <ul id='dropdown-events' class='dropdown-content'>
-                <li>
-                    <a target="_blank" style="color:white;" class="waves-effect waves-light" href="https://www.youtube.com/playlist?list=PLsRNoUx8w3rMjnddlkIXeySLOHfqFxDLy">
+                <li><a target="_blank" style="color:white;" class="waves-effect waves-light" href="https://www.youtube.com/playlist?list=PLsRNoUx8w3rMjnddlkIXeySLOHfqFxDLy">
                         <b>2018: Boundless</b></a></li>
                 <li><a target="_blank" style="color:white;" class="waves-effect waves-light" href="https://www.youtube.com/playlist?list=PLsRNoUx8w3rOEkwS6gZashGbH8otAs3l4">
                         <b>2017: Innovation</b></a></li>
@@ -50,23 +49,27 @@
 
         <!-- Looping gif build. -->
         <div class="row center-align">
-            <img class="animation-logo" src="assets/gif/TEDconstruction_building_only.gif">
+            <!-- <img class="animation-logo" src="assets/gif/TEDconstruction_building_only.gif"> -->
+            <video width="640" height="480" playsinline autoplay muted loop>
+                <source src="assets/webm/tedxconstruction.webm" type="video/webm">
+              </video>
             <!-- Subtitle text. -->
             <h4 style="color:white; letter-spacing: 0.11em;">
-                <i>Building the next.</i>
+                <i>Building the next...</i>
             </h4>
         </div>
         <!-- Past events & Sign up buttons -->
         <div class="row center-align signup" style="margin-bottom:-190px;">
             <span class="input-field inline col s12">
-                <span class="input-field inline">
-                    <input id="email_inline" style="color:white;" name="email" type="email" class="validate">
-                    <label for="email_inline">Email</label>
-                </span>
-                <button style="margin-left:25px;" class="btn waves-effect waves-light red" type="submit" name="action"
-                    id="submit-form">Newsletter
-                    <i class="material-icons right">send</i>
-                </button>
+                <form>
+                    <span class="input-field inline">
+                        <input id="email_inline" style="color:white;" name="email" type="email" class="validate">
+                        <label for="email_inline">Email</label>
+                    </span>
+                    <button style="margin-left:25px;" class="btn waves-effect waves-light red" type="submit" name="action"id="submit-form">Newsletter
+                        <i class="material-icons right">send</i>
+                    </button>
+                </form>
             </span>
         </div>
     </div>
