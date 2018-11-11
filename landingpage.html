@@ -58,9 +58,9 @@
         </div>
         <!-- Sign up button -->
         <div class="row center-align signup" style="margin-bottom:-190px;">
-            <span class="input-field inline col s12">
+            <span class="input-field inline col s12" id="form_div">
 
-                <span class="input-field inline" style="width: 30%">
+                <span class="input-field inline" style="width: 30%" id="email_span">
                     <input id="email_input" style="color:white;" type="email">
                     <label for="email_inline">Email</label>
                 </span>
@@ -68,6 +68,9 @@
                 <button style="margin-left:25px;" class="btn waves-effect waves-light red" id="signup_button" type="submit" name="action">Newsletter
                         <i class="material-icons right">send</i>
                 </button>
+                <div style="color:white; display:none" id="confirm_text">
+                    Thank you for subscribing to our newsletter!
+                </div>
                 
             </span>
         </div>

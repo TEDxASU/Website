@@ -17,16 +17,34 @@ $('.dropdown-button').dropdown({
 
 $("#signup_button").click(function(e)
 {
-    e.preventDefault();
-    e.stopPropagation();
+    submitEmail(e);
+});
+
+function submitEmail(event) {
+    event.preventDefault();
+    event.stopPropagation();
     
     var email_url = 'https://script.google.com/macros/s/AKfycbzW6c7IW5QairdZk06k_pWVhj4Aa_3ACRSj1B380boFUWo0ckIe/exec' + "?email=" + $("#email_input").val();
 
     $.ajax({
         url: email_url,
         method: "GET",
-        success: function(data){},
+        success: function(data){
+            confirmForm();
+        },
         failure: function(error){}
     });
-});
+}
+
+function confirmForm()
+{
+    var emailinput = document.getElementById("email_span");
+    var emailbutton = document.getElementById("signup_button");
+
+    emailinput.style.display = 'none';
+    emailbutton.style.display = 'none';
+
+    var confirmtext = document.getElementById("confirm_text");
+    confirmtext.style.display = 'block';
+}
 // Form javascript/jquery END ------------------------------------------------------------
