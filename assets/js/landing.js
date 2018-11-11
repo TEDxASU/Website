@@ -21,9 +21,18 @@ $("#signup_button").click(function(e)
 });
 
 function submitEmail(event) {
+
+    if($("#email_input").val() == "")
+    {
+        return;
+    }
+
     event.preventDefault();
     event.stopPropagation();
     
+    var emailbutton = document.getElementById("signup_button");
+    emailbutton.classList.add("disabled");
+
     var email_url = 'https://script.google.com/macros/s/AKfycbzW6c7IW5QairdZk06k_pWVhj4Aa_3ACRSj1B380boFUWo0ckIe/exec' + "?email=" + $("#email_input").val();
 
     $.ajax({
@@ -32,7 +41,9 @@ function submitEmail(event) {
         success: function(data){
             confirmForm();
         },
-        failure: function(error){}
+        failure: function(error){
+            emailbutton.classList.remove("disabled");
+        }
     });
 }
 
