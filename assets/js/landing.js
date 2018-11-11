@@ -20,19 +20,13 @@ $("#signup_button").click(function(e)
     e.preventDefault();
     e.stopPropagation();
     
-    var json = {};
     var email_url = 'https://script.google.com/macros/s/AKfycbzW6c7IW5QairdZk06k_pWVhj4Aa_3ACRSj1B380boFUWo0ckIe/exec' + "?email=" + $("#email_input").val();
 
     $.ajax({
         url: email_url,
         method: "GET",
-        success: function(data){
-
-        },
-        failure: function(error) {
-
-        }
+        success: function(data){},
+        failure: function(error){}
     });
 });
-
 // Form javascript/jquery END ------------------------------------------------------------
