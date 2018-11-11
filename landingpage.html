@@ -17,8 +17,6 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Custom JS -->
-    <!-- <script src="assets/js/actions.js"></script> -->
-    <script src="assets/js/landing.js"></script>
 </head>
 
 <body class="section" style="background-color:black;">
@@ -58,18 +56,17 @@
                 <i>Building the next...</i>
             </h4>
         </div>
-        <!-- Past events & Sign up buttons -->
+        <!-- Sign up button -->
         <div class="row center-align signup" style="margin-bottom:-190px;">
             <span class="input-field inline col s12">
-                <form>
-                    <span class="input-field inline">
-                        <input id="email_inline" style="color:white;" name="email" type="email" class="validate">
-                        <label for="email_inline">Email</label>
-                    </span>
-                    <button style="margin-left:25px;" class="btn waves-effect waves-light red" type="submit" name="action"id="submit-form">Newsletter
-                        <i class="material-icons right">send</i>
+                <span class="input-field inline" style="width: 30%">
+                    <input id="email_input" style="color:white;" type="email">
+                    <label for="email_inline">Email</label>
+                </span>
+                    <button style="margin-left:25px;" class="btn waves-effect waves-light red" id="signup_button" type="submit" name="action">Newsletter
+                            <i class="material-icons right">send</i>
                     </button>
-                </form>
+                
             </span>
         </div>
     </div>
@@ -77,5 +74,7 @@
     <script src="https://unpkg.com/ionicons@4.4.6/dist/ionicons.js"></script>
     <!-- ionicon (https://ionicons.com -->
 </body>
+<!-- <script src="assets/js/actions.js"></script> -->
+<script src="assets/js/landing.js"></script>
 
 </html>

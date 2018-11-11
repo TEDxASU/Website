@@ -1,4 +1,5 @@
 
+
 $('.dropdown-button').dropdown({
     inDuration: 300,
     outDuration: 225,
@@ -13,18 +14,25 @@ $('.dropdown-button').dropdown({
 
 
 // Form javascript/jquery START ------------------------------------------------------------
-var $form = $('form#test-form'),
-    url = 'https://script.google.com/macros/s/abcdefghijklmnopqrstuvwxyz1234567890/exec'
 
-$('#submit-form').on('click', function (e) {
+$("#signup_button").click(function(e)
+{
     e.preventDefault();
-    var jqxhr = $.ajax({
-        url: url,
+    e.stopPropagation();
+    
+    var json = {};
+    var email_url = 'https://script.google.com/macros/s/AKfycbzW6c7IW5QairdZk06k_pWVhj4Aa_3ACRSj1B380boFUWo0ckIe/exec' + "?email=" + $("#email_input").val();
+
+    $.ajax({
+        url: email_url,
         method: "GET",
-        dataType: "json",
-        data: $form.serializeObject()
-    }).success(
-        // do something
-    );
-})
+        success: function(data){
+
+        },
+        failure: function(error) {
+
+        }
+    });
+});
+
 // Form javascript/jquery END ------------------------------------------------------------
