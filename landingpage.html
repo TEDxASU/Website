@@ -27,22 +27,36 @@
             <h4 class="white-text right-align" style="margin-top:0px;">
                 <br>Coming <b>2019</b>
             </h4>
-
-            <!-- Dropdown Trigger -->
-            <a id="dropdown-group" class='dropdown-button waves-effect waves-light red btn' 
-                                    href='#' 
-                                    data-beloworigin="true" 
-                                    data-activates='dropdown-events'>
-                                    <span>Past Events</span></a>
-            <!-- Dropdown Structure -->
-            <ul id='dropdown-events' class='dropdown-content'>
+            <div id="content-desktop">
+                <!-- Dropdown Trigger -->
+                <a id="dropdown-group" class='dropdown-button waves-effect waves-light red btn' 
+                href='#' 
+                data-beloworigin="true" 
+                data-activates='dropdown-events'>
+                <span>Past Events</span></a>
+                <!-- Dropdown Structure -->
+                <ul id='dropdown-events' class='dropdown-content'>
                 <li><a target="_blank" style="color:white;" class="waves-effect waves-light" href="https://www.youtube.com/playlist?list=PLsRNoUx8w3rMjnddlkIXeySLOHfqFxDLy">
-                        <b>2018: Boundless</b></a></li>
+                <b>2018: Boundless</b></a></li>
                 <li><a target="_blank" style="color:white;" class="waves-effect waves-light" href="https://www.youtube.com/playlist?list=PLsRNoUx8w3rOEkwS6gZashGbH8otAs3l4">
-                        <b>2017: Innovation</b></a></li>
+                <b>2017: Innovation</b></a></li>
                 <li><a target="_blank" style="color:white;" class="waves-effect waves-light" href="https://www.youtube.com/playlist?list=PLsRNoUx8w3rMUYd52BivT9yG8jmo1XA5K">
-                        <b>2016: Outliers</b></a></li>
-            </ul>
+                <b>2016: Outliers</b></a></li>
+                </ul>
+            </div>
+
+            <div id="content-mobile">
+                <a target="_blank" class='waves-effect waves-light red btn playlist-button' href='https://www.youtube.com/playlist?list=PLsRNoUx8w3rMjnddlkIXeySLOHfqFxDLy'>2018 Boundless</a>
+                <br>
+                <br>
+                <a target="_blank" class='waves-effect waves-light red btn playlist-button' href='https://www.youtube.com/playlist?list=PLsRNoUx8w3rOEkwS6gZashGbH8otAs3l4'>2017 Innovation</a>
+                <br>
+                <br>
+                <a target="_blank" class='waves-effect waves-light red btn playlist-button' href='https://www.youtube.com/playlist?list=PLsRNoUx8w3rMUYd52BivT9yG8jmo1XA5K'>2016 Outliers  </a>
+                <br>
+            </div>
+            
+
         </div>
 
         <!-- Looping gif build. -->
@@ -62,7 +76,7 @@
 
                 <span class="input-field inline" style="width: 30%" id="email_span">
                     <input id="email_input" style="color:white;" type="email">
-                    <label for="email_inline">Email</label>
+                    <label for="email_inline" style="color:white;">Email</label>
                 </span>
 
                 <button style="margin-left:25px;" class="btn waves-effect waves-light red" id="signup_button" type="submit" name="action">Newsletter

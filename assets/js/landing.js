@@ -20,6 +20,14 @@ $("#signup_button").click(function(e)
     submitEmail(e);
 });
 
+$('#email_input').keydown(function(event){ 
+    var keyCode = (event.keyCode ? event.keyCode : event.which);  
+    // If enter is pressed. 
+    if (keyCode == 13) {
+        $('#signup_button').trigger('click');
+    }
+});
+
 function submitEmail(event) {
 
     if($("#email_input").val() == "")
