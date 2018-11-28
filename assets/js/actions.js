@@ -79,8 +79,8 @@ $(document).ready(function(){
 });
 
 
-// changes navbar to selection dropdown on right side on mobile
-$(document).ready(function(){
-  $('.sidenav').sidenav();
-});
+// // changes navbar to selection dropdown on right side on mobile
+// $(document).ready(function(){
+//   $('.sidenav').sidenav();
+// });
     
