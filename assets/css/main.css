@@ -1,0 +1,143 @@
+/* Remove scrollbar */
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+video {
+    position: relative;
+     right: 0;
+     bottom: 0;
+     min-width: 100%;
+     min-height: 100%;
+     margin-top: -100%;
+     width: auto;
+     height: auto;
+     z-index: -1;
+     /*to edit the opacity effect change the percentage below */
+     /* transform: translateX(10%) translateY(40%); */
+     -webkit-filter: blur(3px) grayscale(30%) opacity(50%); /* Safari 6.0 - 9.0 */
+    filter: blur(3px) grayscale(30%) opacity(50%);
+}
+
+/* #indexSlider { position:relative; } */
+#indexSlider video {
+    z-index:0;
+}
+.overlayVideo {
+    /* position:absolute; */
+    position: relative;
+    margin-right: 40px;
+    z-index:1;
+}
+
+
+.nextGenLogo {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    max-width: 550px;
+    max-height: 350px;
+    margin-top: 5%;
+}
+
+.page-footer {
+    background-color: #000000;
+    padding-bottom: 15px;
+}
+
+ion-icon {
+    font-size: 60px;
+}
+
+#fact-box-1 {
+    text-align: center;
+    background-color: #000000;
+    line-height: 50px;
+    color: white;
+}
+
+#fact-box-2 {
+    text-align: center;
+    background-color: #4E160D;
+    line-height: 50px;
+    color: white;
+}
+
+#fact-box-3 {
+    text-align: center;
+    background-color: #9C2C1A;
+    line-height: 50px;
+    color: white;
+}
+
+#fact-box-4 {
+    text-align: center;
+    background-color: #EB4327;
+    line-height: 50px;
+    color: white;
+}
+
+.row{
+    display:block;
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+
+/* Remove border. */
+.collapsible-header, .collapsible-body, .collapsible, ul.collapsible>li 
+{
+  /* margin: 0!important;; */
+  /* padding: 0!important; */
+  border: 0!important;
+  box-shadow: none!important;
+}
+
+.transparent-btn {
+    background-color: transparent;
+}
+
+#dropdown-group {
+    /* margin-top: 15px; */
+}
+
+ .waves-effect.waves-brown .waves-ripple {
+    /* The alpha value allows the text and background color
+    of the button to still show through. */
+     /* background-color: rgba(121, 85, 72, 0.65); */
+     background-color: red;
+   }
+ 
+
+.dropdown-content {
+    border: 0!important;
+    box-shadow: none!important;
+    background-color: transparent;
+    padding-top: 25px;
+    /* width: max-content !important;
+    height:auto !important; */
+}
+
+.dropdown-content li:hover {
+    background-color: rgba(227, 50, 42, 0.40);
+}
+
+.dropdown-content li {
+    border: 0!important;
+    box-shadow: none!important;
+}
+
+.dropdown-content .btn.waves-effect.waves-light {
+    border: 0px;
+}
